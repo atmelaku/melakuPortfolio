@@ -204,6 +204,11 @@ div.picture {
 .upload #cancel-btn > a {
   color: white;
 }
+
+/* new post  */
+#id_content {
+  height: 200px
+}
 /* footer style */
 footer {
   background-color: #1B100E;

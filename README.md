@@ -5,6 +5,7 @@ Only three steps.
 delete db.sqlite3 and all migrations files | on heroku console too
 run python manage.py makemigrations
 run python manage.py migrate
+python manage.py runserver
 source:
 https://ts-cset.github.io/cset-160/week-05/virtual-environments.html#10
 python3 -m venv venv
