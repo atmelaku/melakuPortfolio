@@ -19,13 +19,10 @@ ul {
   margin: 0;
 }
 .fixed-top {
-  background-image: url('../asset/imgs/background_forWebsite.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+background-color: #F0830C;
 }
 .site-header .navbar-nav .nav-link {
-  color: dimgrey;
+  color: white;
   font-size: 22px;
 }
 
@@ -41,12 +38,14 @@ ul {
   background-color: #1E1E12;
 }
 .content-section {
-  background: #141412;
+  background: #EDF0EF;
   padding: 10px 20px;
   border: 1px solid #dddddd;
-  border-radius: 3px;
+  border-radius: 10px;
   margin-bottom: 20px;
   color: #F0F2E7;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Adjust the shadow color and size as needed */
+      padding: 20px;
 }
 
 .article-title {
@@ -123,11 +122,31 @@ div.picture {
 }
 
 
+.row {
+    background: aliceblue;
+    border-radius: 10px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+label.requiredField, legend.border-bottom.mb-4,
+p.article-content, div, h2, h3, h1
+ {
+    color: black;
+    text-transform: capitalize;
+}
+
+ul.contact-list {
+    color: white;
+}
+.feeds_heading {
+  border: 2px solid lightblue;
+  border-radius: 50%;
+}
 /* profile page */
 
 .form-control {
-  background-color: black;
-  color: white;
+
+  color: black;
 }
 /* gallery */
 .upload_img--form {
@@ -211,7 +230,7 @@ div.picture {
 }
 /* footer style */
 footer {
-  background-color: #1B100E;
+  background-color: #516f90;
   color: white;
   padding: 10px;
 
