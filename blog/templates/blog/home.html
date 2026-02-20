@@ -3,10 +3,12 @@
 
 {% block content %}
 
-<h3 class="feeds_heading" style="text-align: center;">WelCome!! Please Explore Our Feeds</h3>
-
+<div class="blogPageTitle-div">
+  <h1 class="blogPageTitle-h1">Blog</h1>
+  <p class="blogPageTitle-p">Thoughts, tutorials, and insights about web development, React, and modern frontend technologies.</p>
+</div>
 {% for post in posts %}
-
+<!--
 <article class="media content-section">
   <img class="rounded-circle article-img "src="{{ post.author.profile.image.url }}" alt="">
   <div class="media-body">
@@ -17,9 +19,52 @@
     <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
     <p class="article-content">{{ post.content }}</p>
   </div>
-</article>
+</article> -->
+
+<div class="blogs">
+
+  <div class="blog-body">
+    <div class="dateNreadTime-div">
+      <div class="date-div">
+        <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
+
+      </div>
+      <div class="readTime-div">
+        <small class="article-readTime">{{ post.readTime }} min read</small>
+
+      </div>
+    </div>
+    <h2><a class="blog-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
+    <p class="article-content">{{ post.content }}</p>
+
+  </div>
+
+  <div class="horizontal-line">
+<hr>
+  </div>
+
+  <div class="img_nameDate-div">
+    <div class="authrImg-div">
+      <img class="rounded-circle article-img "src="{{ post.author.profile.image.url }}" alt="">
+    </div>
+
+    <div class="blog-metadata">
+      <div class="">
+        <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
+
+      </div>
+      <div class="">
+        <p>{{ post.authorTitle }} </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 {% endfor %}
+<div class="pages-div">
+
 
 {% if is_paginated %}
 
@@ -44,6 +89,6 @@
     {% endif %}
 
   {% endif %}
-
+</div>
 
 {% endblock %}

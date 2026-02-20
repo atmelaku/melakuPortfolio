@@ -4,8 +4,11 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 class Post(models.Model):
     title = models.CharField(max_length=100)
-    content = models.CharField(max_length=1000)
+    content = models.TextField(max_length=1000)
     date_posted = models.DateTimeField(default=timezone.now)
+    readTime = models.CharField(max_length=100, default=0, help_text="Estimated read time in minutes")
+    authorTitle = models.CharField(max_length=100, default="Full-Stack Developer", help_text="Your Profesion")
+
     # telling django to delete if the user is null del post
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 

@@ -3,8 +3,175 @@
 
 
 {% block content %}
-<div class="resume">
-  <h1>My Embedded Resume</h1>
-  <iframe src="{% static 'asset/file/atmelaku24_resume copy.pdf' %}" width="100%" height="1000px"></iframe>
+
+<div class="rsmContainer_div">
+
+
+<div class="rsmTopInfo_div" id="rsmTopInfo_div">
+  <div class="nameInfo_div">
+  <a href="{% url 'blog-home' %}"><i class="fa-solid fa-arrow-left"></i>Back to Home</a>
+  <h1>Alebachew Melaku</h1>
+  <h5>Full Stack Developer</h5>
+  <div class="rsmCntcs_div">
+    <p><i class="fa-solid fa-envelope"></i> alebachew@gmail.com</p>
+    <p><i class="fa-solid fa-phone"></i> 857 302 9778</p>
+    <p><i class="fa-solid fa-location-dot"></i>0000 street PA USA</p>
+
+  </div>
+  </div>
+
+  <div class="resume">
+    <a href="{% static 'asset/file/atmelakuCv26.pdf' %}" ><i class="fas fa-download"></i>Download PDF</a>
+  </div>
 </div>
+
+<div class="rsmPrfsnlInfo_div rsmSctn_div">
+  <h2><i class="fas fa-briefcase i-prfsnSmry"></i>Professional Summary</h2>
+  <p>
+    Experienced full-stack developer with 3+ years of expertise in building scalable web applications.
+    Proficient in modern JavaScript frameworks, cloud technologies, and agile methodologies.
+    Proven track record of leading development teams and delivering high-quality software solutions
+    that drive business growth. Passionate about clean code, user experience, and continuous learning.
+  </p>
+</div>
+
+
+<div class="rsmWrkExprnc_div rsmSctn_div">
+<h2><i class="fas fa-briefcase"></i>Work Experience</h2>
+  <div class="wrkExprcOne_div">
+    <div class="vrtclLn-div">
+      <i class="fa-solid fa-circle-dot"></i>
+      <div class="line-with-circle"></div>
+    </div>
+
+    <div class="">
+      <h3>Full-Stack Developer</h3>
+      <h4>Bae Systems</h4>
+      <div class="">
+        <div class="lctNdt">
+          <p><i class="fa-solid fa-location-dot"></i> Mechanicsburg, PA</p>
+          <p><i class="fa-regular fa-calendar"></i> Feb 2024 - Present</p>
+        </div>
+        <div class="">
+          <ul>
+            <li>Developing a multifunctional website</li>
+            <li>Adding features and fixing bugs in existing Web Applications </li>
+            <li>Demonstrated full-stack development expertise </li>
+            <li>Building Unit testing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+<div class="wrkExprcTwo_div ">
+
+  <div class="vrtclLn-div">
+    <i class="fa-solid fa-circle-dot"></i>
+    <div class="line-with-circle"></div>
+  </div>
+
+  <div class="">
+    <h3>Software Developer Intern</h3>
+    <h4>Gateway Ticketing System</h4>
+    <div class="">
+      <div class="lctNdt">
+        <p><i class="fa-solid fa-location-dot"></i>Gilbertsville, PA </p>
+        <p><i class="fa-regular fa-calendar"></i>May 2023 - August 2023</p>
+      </div>
+      <div class="">
+        <ul>
+          <li>Collaborated on developing a C#.NET Core console app, successfully migrating over 10,000 local files to Azure cloud storage</li>
+          <li>Handled database operations, cataloged, uploaded, and retrieved files in Azure, with file deletion for space optimization</li>
+          <li>Send file information to team channels and implemented email notifications for users</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<div class="edctnInfo_div rsmSctn_div">
+  <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+
+  <div class="schlOne">
+    <h3>Bachelor of Science in Computer Science</h3>
+    <h4>Millersville University, Millersville</h4>
+    <div class="mlrsvl">
+      <p><i class="fa-solid fa-location-dot"></i>Millersville, PA</p>
+      <p><i class="fa-regular fa-calendar"></i>2021-2023</p>
+      <p class="gpa">GPA: 3.5/4.0</p>
+    </div>
+  </div>
+  <div class="schlTwo">
+      <h3>Associate of Science in Computer Software Engineering</h3>
+      <h4>Thaddeus Stevens College, Lancaster</h4>
+      <div class="thds">
+        <p><i class="fa-solid fa-location-dot"></i>Lancaster, PA</p>
+        <p><i class="fa-regular fa-calendar"></i>2019-2021</p>
+        <p class="gpa">GPA: 3.8/4.0</p>
+      </div>
+  </div>
+</div>
+
+<div class="sklInfo_div rsmSctn_div">
+  <h2><i class="fa-solid fa-code"></i>Technical Skills</h2>
+  <div class="sklGrps_div">
+    <div class="skl_div">
+      <h4>Frontend</h4>
+      <p>HTML5/CSS</p>
+      <p>JavaScript</p>
+      <p>React</p>
+      <p>Vue.js</p>
+      <p>Bootstrap</p>
+    </div>
+    <div class="skl_div">
+      <h4>Backend</h4>
+      <p>Python</p> <p>Flask</p> <p>PHP</p>
+      <p>Django</p> <p>.Net Core</p> <p>ASP.NET MVC</p>
+      <p>C#</p> <p>Node.js</p> <p>Express</p>
+    </div>
+    <div class="skl_div">
+      <h4>Databse</h4>
+      <p>Sql</p> <p>Postgres</p>
+      <p>oracle</p> <p>MongoDB</p>
+      <p>Azure</p> <p>Firebase</p>
+    </div>
+    <div class="skl_div">
+      <h4>Tools and Others</h4>
+      <p>Git</p> <p>GitHub</p>
+      <p>bash</p> <p>Vs Code</p>
+      <p>Heroku Server</p>
+    </div>
+  </div>
+</div>
+
+<div class="ctrfctInfo_div rsmSctn_div">
+  <h2><i class="fa-solid fa-certificate"></i>Certificate</h2>
+  <div class="crtfcs_div">
+    <div class="crtfc_div ctrfctOne_div">
+      <h3>.NET Full Stack Foundation </h3>
+      <h5>Coursera</h5>
+      <p>November 2023</p>
+    </div>
+    <div class="crtfc_div crtfctTwo_div">
+      <h3>Frontend Development using React</h3>
+      <h5>Coursera</h5>
+      <p>November 2023</p>
+    </div>
+    <div class="crtfc_div crtfctThree_div">
+      <h3>Backend Development for .NET Full Stack</h3>
+      <h5>Coursera</h5>
+      <p>December 2023</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
 {% endblock %}

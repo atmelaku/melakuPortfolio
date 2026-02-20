@@ -2,9 +2,10 @@
 {% load static %}
 {% block content %}
 
-<h2>Edit Image and Description</h2>
 
-<div class="upload_img--form">
+
+<div class="edit_upload_imgs--form">
+  <h2>Edit Image and Description</h2>
   <form method="post" enctype="multipart/form-data">
       {% csrf_token %}
 
@@ -13,10 +14,9 @@
               {{ form.as_p }}
           </div>
       </div>
-      <div class="upload">
-          <button type="submit">Upload</button>
-          <button id="cancel-btn" type="button" name="button"><a href="{% url 'blog-gallery' %}">Cancel</a></button>
-
+      <div class="uploadPic-div">
+        <button class="btn post_form-btn btn-outline-info" type="submit">Upload to Gallery</button>
+        <a class="cancelForm-btn btn-warning" href="{% url 'blog-gallery'  %}">Cancel</a>
       </div>
   </form>
 </div>
